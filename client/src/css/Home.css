@@ -1,0 +1,225 @@
+body {
+      font-family: 'Heebo', sans-serif;
+      background-color: #e8e8e8;
+      color: #333;
+      margin: 0;
+      padding: 0;
+}
+
+.app {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      top: 190px;
+      text-align: left;
+      letter-spacing: 0px;
+      color: #707070;
+}
+
+.container {
+      border-radius: 10px;
+      display: flex;
+      height: 80vh;
+}
+
+.left,
+.right {
+      flex: 1;
+}
+
+.left {  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40vw;
+}
+
+.leftContent {
+      margin-left: 5%;
+}
+
+.left h1 {
+      width: 20vw;
+      text-align: left;
+      font: normal normal 300 25px/44px Heebo;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+      margin-bottom: 10vh;
+}
+
+label {
+      text-align: left;
+      font: normal normal 300 16px/22px Heebo;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+}
+
+.input {
+      align-items: center;
+      position: relative;
+      display: flex;
+      max-width: 250px;
+}
+
+input[type="text"] {
+      box-sizing: border-box;
+      flex: 1;
+      padding: 2px;
+      width: 100%;
+      text-align: left;
+      font: normal normal normal 20px/32px Heebo;
+      letter-spacing: 0px;
+      color: #363636;
+      width: 35vw;
+      height: 7vh;
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+      border: none;
+      opacity: 1;
+}
+
+button {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      text-align: left;
+      font: normal normal 300 18px/80% Heebo;
+      color: #FFFFFF;
+      text-align: center;
+      width: 30%;
+      height: 80%;
+      background: #046B3B 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+      opacity: 1;
+}
+
+.empty-state {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: #888;
+}
+
+.coordinates {
+      text-align: left;
+      font: normal normal 300 14px/22px Heebo;
+      letter-spacing: 0px;
+      color: #707070;
+      opacity: 1;
+      margin-top: 20%;
+}
+
+.logo {
+      position: absolute;
+      top: 50px;
+      left: 5%;
+      margin-left: 5px;
+      width: 20vh;
+      height: 5vw;
+      display: flex;
+      background: transparent url('/public/img/logo.svg') 0% 0% no-repeat padding-box;
+      opacity: 1;
+      width: 98px;
+      height: 43px;
+}
+
+@media screen and (max-width: 900px) {
+      .left h1 {
+            width: 40vw;
+      }
+
+      input[type="text"] {
+            font: normal normal normal 13px/12px Heebo;
+      }
+
+      button {
+            width: 40%;
+            font: normal normal 300 10px/80% Heebo;
+      }
+}
+
+@media screen and (max-width: 600px) {
+      .left {
+            width: 35vw;
+      }
+
+      .left h1 {
+            font: normal normal 300 17px/25px Heebo;
+            width: 95%;
+      }
+
+
+      input[type="text"] {
+            font: normal normal normal 10px/12px Heebo;
+      }
+
+}
+
+@media screen and (max-width: 350px),
+(max-height: 600px) {
+      .left h1 {
+            width: 35vw;
+            margin: 0;
+            height: 10vh;
+            font: normal normal 300 15px/20px Heebo;
+            margin-bottom: 5vh;
+      }
+
+      label {
+            font: normal normal 300 10px/22px Heebo;
+      }
+}
+
+@media screen and (max-width: 500px),
+(max-height: 400px) {
+      .container {
+            display: grid;
+            grid-template-rows: auto auto;
+      }
+
+      .left {
+            height: 90vh;
+      }
+
+      .input {
+            width: 70vw;
+      }
+
+      input[type="text"] {
+            font: normal normal normal 20px/32px Heebo;
+            height: 50px;
+            width: 70vw;
+            max-width: 250px;
+      }
+
+      button {
+            position: absolute;
+            transform: translateY(-50%);
+            right: 1px;
+            width: 70px;
+            height: 80%;
+      }
+}
+
+@media screen and (max-height: 500px){
+      .leftContent {
+            margin-top: 200px;
+      }
+
+      .left h1{
+            width: 200px;
+      }
+
+      .coordinates {
+            width: 200px;
+            height: 200px;
+      }
+
+}
+
